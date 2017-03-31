@@ -1,0 +1,32 @@
+template(name='layout')
+    +menu
+    .green.lighten-1
+        +yield
+
+template(name='menu')
+    nav.green: .nav-wrapper
+        ul.left
+            li.teal: a Beranda
+            li: a Tentang
+            li: a Kontak
+        a.brand-logo.center Peta Online DISLHK Riau
+        ul.right
+            li: a Profil
+            li: a Login
+            li: a Register
+
+template(name='home')
+    .row
+        .col.m4
+            .card.z-depth-2.map#peta1
+        .col.m4
+            .card.z-depth-2.map#peta2
+        .col.m4
+            .card.z-depth-2.map#peta3
+    .row
+        .col.m4
+            .card.z-depth-2.map#peta4
+        .col.m4
+            .card.z-depth-2.map#peta5
+        .col.m4
+            .card.z-depth-2.map#peta6
